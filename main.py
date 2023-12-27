@@ -5,6 +5,7 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 def open_file():
 
     """Open a file for editing."""
+
     filepath = askopenfilename(
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
     )
@@ -18,7 +19,9 @@ def open_file():
 
 
 def save_file():
+
     """Save the current file as a new file."""
+
     filepath = asksaveasfilename(
         defaultextension="txt",
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")],
